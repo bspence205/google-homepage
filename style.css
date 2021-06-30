@@ -33,6 +33,11 @@ html {
   text-decoration: none;
 }
 
+.login {
+  background-color: rgba(41, 91, 228, 0.835);
+  color: white;
+  padding: 9px 23px;
+}
 .container {
   flex-grow: 1;
   display: flex;
@@ -41,23 +46,30 @@ html {
   margin-top: 20rem;
 }
 
-.nav,
-.container,
-.footer {
-  flex-shrink: 0;
-}
 .search-bar {
   margin-top: 20px;
+  display: flex;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #c2bdbd;
+}
+
+.speaker,
+.mic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search {
   width: 500px;
   max-width: 585px;
-  height: 35px;
-  border-radius: 20px;
+  height: 20px;
+  border: none;
   outline: none;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid #c2bdbd;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
 }
 
 .btn {
@@ -76,14 +88,22 @@ html {
   cursor: pointer;
 }
 
-.footer {
+a {
+  text-decoration: none;
+  color: #7a7171;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-end;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  line-height: 30px;
   background-color: #f2f2f2;
+  padding: 10px;
 }
 
 .nav-footer {
